@@ -5,8 +5,8 @@ require 'fileutils'
 require 'open-uri'
 
 ActiveRecord::Base.establish_connection(
-  :adapter  => 'sqlite3',
-  :database =>  'data/people.sqlite3.db'
+  :adapter  => 'postgresql',
+  :database =>  'data/people.postgresql.db'
 )
 
 class People < ActiveRecord::Base
